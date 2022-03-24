@@ -31,7 +31,20 @@ body {
   background-color: #1b1b1b;
   padding: 30px;
 }
+.content {
+  padding: 30px;
+}
 h1 {
+  font-size: calc(24px + 16 * (100vw / 1280));
+  font-weight: 900;
+}
+
+@media (max-width: 767px) {
+  h1 {
+    font-size: calc(24px + (16 + 16 * 0, 7) * ((100vw - 320px) / 1280));
+  }
+}
+h2 {
   font-size: 30px;
   font-weight: 900;
   margin: 0px 0px 20px 0px;
